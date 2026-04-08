@@ -1,61 +1,62 @@
 # Resume Matcher
 
-A modern web application that helps match resumes with job descriptions using intelligent ATS (Applicant Tracking System) analysis.
+A modern web application that helps job seekers optimize their resumes by analyzing them against job descriptions using ATS (Applicant Tracking System) optimization techniques.
 
 ## Features
 
-- 📄 **Resume Upload & Analysis** - Upload resumes and get instant ATS compatibility analysis
-- 🎯 **Job Description Matching** - Match your resume against job descriptions
-- 📊 **Detailed Analytics** - View matching scores and improvement suggestions
-- 🎨 **Modern UI** - Clean, responsive interface built with React and Tailwind CSS
-- ⚡ **Fast Performance** - Built with Vite for lightning-fast development and production builds
+- **Resume Upload**: Upload your resume in multiple formats
+- **Job Description Analysis**: Paste or upload job descriptions for position matching
+- **ATS Optimization**: Get AI-powered recommendations to improve your resume's ATS compatibility
+- **Keyword Matching**: Identify missing keywords and skills from job descriptions
+- **Real-time Feedback**: Instant analysis and suggestions for improvements
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
 
 ## Tech Stack
 
-- **Frontend**: React 18 + TypeScript
-- **Build Tool**: Vite 5
-- **Styling**: Tailwind CSS
-- **Icons**: Lucide React
-- **Linting**: ESLint
+### Frontend
+- **React 18.3.1** - UI library
+- **TypeScript 5.5.3** - Type safety
+- **Vite 5.4.2** - Build tool and dev server
+- **Tailwind CSS 3.4.1** - Styling
+- **Lucide React 0.344.0** - Icon components
 
-## Prerequisites
+### Backend
+- **Python** - Job scraper and data processing
+- **Flask/Django** (optional) - API server
 
-- Node.js (v16 or higher)
+## Getting Started
+
+### Prerequisites
+- Node.js 16+ 
 - npm or yarn
+- Python 3.8+ (for backend)
 
-## Installation
+### Installation
 
+1. **Clone the repository**
 ```bash
-# Clone the repository
 git clone https://github.com/KashishPanchal/resume_maker_web.git
 cd resumeMatcher-main
+```
 
-# Install dependencies
+2. **Install dependencies**
+```bash
 npm install
 ```
 
-## Development
-
-Start the development server:
-
+3. **Start the development server**
 ```bash
 npm run dev
 ```
 
 The application will be available at `http://localhost:5173/`
 
-## Building for Production
-
-```bash
-npm run build
-```
-
 ## Available Scripts
 
-- `npm run dev` - Start development server
+- `npm run dev` - Start the development server
 - `npm run build` - Build for production
-- `npm run preview` - Preview production build locally
-- `npm run lint` - Run ESLint to check code quality
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview the production build locally
 
 ## Project Structure
 
@@ -71,78 +72,71 @@ npm run build
 │   │   ├── Pricing.tsx
 │   │   ├── ResultsSection.tsx
 │   │   └── UploadSection.tsx
-│   ├── App.tsx              # Main App component
-│   ├── main.tsx             # Entry point
-│   └── index.css            # Global styles
-├── backend/                 # Backend resources
-├── index.html               # HTML template
+│   ├── App.tsx             # Main app component
+│   ├── main.tsx            # Entry point
+│   └── index.css           # Global styles
+├── backend/                 # Backend code
+├── public/                  # Static assets
+├── tailwind.config.js       # Tailwind configuration
+├── tsconfig.json            # TypeScript configuration
 ├── vite.config.ts           # Vite configuration
-├── tailwind.config.js       # Tailwind CSS configuration
 └── package.json             # Project dependencies
 ```
 
-## Features Breakdown
+## How It Works
 
-### Resume Upload Section
-- Drag and drop interface for easy file uploads
-- Support for multiple resume formats
-- Real-time validation
+1. **Upload Resume** - Users upload their resume (PDF, DOCX, TXT)
+2. **Enter Job Description** - Paste the target job posting
+3. **Analysis** - The app analyzes the resume against the job description
+4. **Get Recommendations** - Receive AI-powered suggestions for optimization
+5. **Improve** - Update resume based on feedback and retest
 
-### ATS Analysis
-- Keyword matching against job descriptions
-- Score calculation based on relevant skills
-- Actionable recommendations for improvement
+## Features in Detail
 
-### How It Works
-- Step-by-step guide for users
-- Interactive demonstration
-- Best practices for resume optimization
+### Resume Analysis
+- Extracts key information from resumes
+- Identifies skills, experience, and education
+- Analyzes formatting and structure
 
-### Pricing
-- Flexible pricing tiers
-- Feature comparison
-- Enterprise options
+### ATS Compatibility
+- Checks for ATS-unfriendly elements
+- Suggests format improvements
+- Validates keyword presence
 
-## Deployment
-
-The application can be deployed to various platforms:
-
-### Vercel (Recommended)
-```bash
-npm run build
-# Deploy the dist/ folder to Vercel
-```
-
-### Netlify
-- Connect your GitHub repository
-- Set build command: `npm run build`
-- Set publish directory: `dist/`
-
-### Traditional Server
-```bash
-npm run build
-# Copy the dist/ folder to your web server
-```
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+### Job Matching
+- Compares resume against job requirements
+- Identifies skill gaps
+- Suggests keyword additions
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
 ## License
 
-This project is licensed under the MIT License.
+This project is open source and available under the MIT License.
 
-## Contact
+## Contact & Support
 
-For questions or support, please reach out through the GitHub issues page.
+For issues, feature requests, or questions:
+- Open an issue on GitHub
+- Contact: KashishPanchal
+
+## Roadmap
+
+- [ ] Advanced PDF parsing
+- [ ] Multi-language support
+- [ ] Resume templates
+- [ ] Interview prep module
+- [ ] Job board integration
+- [ ] LinkedIn integration
 
 ---
 
-**Made with ❤️ by Kashish Panchal**
+**Happy resume optimizing! 🚀**
